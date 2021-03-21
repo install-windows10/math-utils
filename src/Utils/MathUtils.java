@@ -13,17 +13,21 @@ import java.util.Scanner;
  * @author nguye
  */
 public class MathUtils {
-    public static double getFactorial(){
-        double result = 0 ;
-        double input = 0;
+    private static final double pi = 3.1415;
+    
+    public static long getFactorial(int n){
+        long result = 1;        
+        //Hàm chỉ chấp nhận từ 0 -> 21, trả kiểu Long
+        //Kiểu long chịu đc 10^18 con số
         
-        System.out.print("Input a number: ");
-        Scanner sc = new Scanner(System.in);
-        input = sc.nextDouble();
+        if(n < 0 || n > 20)
+            throw new IllegalArgumentException("Invalud argument. Input must be between 0 -> 20");
         
-        for (double i = 0; i < input; i++){
-            result = input*i;
-        }
+        if(n == 0 || n == 1)
+            return 1; //0! = 1! = 1
+        
+        for (int i = 2; i <= n; i++) 
+            result *=i;
         
         return result;
     }
