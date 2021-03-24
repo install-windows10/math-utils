@@ -1,12 +1,5 @@
-package Utils;
+package com.kringe.mathutil;
 
-import java.util.Scanner;
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 /**
  *
@@ -16,7 +9,7 @@ public class MathUtils {
     private static final double pi = 3.1415;
     
     public static long getFactorial(int n){
-        long result = 1;        
+        long result = 0;        
         //Hàm chỉ chấp nhận từ 0 -> 21, trả kiểu Long
         //Kiểu long chịu đc 10^18 con số
         
