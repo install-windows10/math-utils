@@ -27,15 +27,12 @@ public class MathUtilsTest {
         
         assertEquals(expected, actual);
         
-        assertEquals(720, getFactorial(6));
-        assertEquals(24, getFactorial(4));
-        assertEquals(6, getFactorial(3));
-        assertEquals(1, getFactorial(1));
+        
         
     }
     
     //@Test(expected = IllegalArgumentException.class)
-    @Test(expected = IllegalArgumentException.class)
+    @Test (expected = IllegalArgumentException.class)
     public void testFactorialWrongArgumentThrowsException(){
         getFactorial(-5);       
         getFactorial(21);       

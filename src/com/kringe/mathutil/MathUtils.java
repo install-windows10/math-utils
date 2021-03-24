@@ -9,7 +9,7 @@ public class MathUtils {
     private static final double pi = 3.1415;
     
     public static long getFactorial(int n){
-        long result = 0;        
+        long result = 1;        
         //Hàm chỉ chấp nhận từ 0 -> 21, trả kiểu Long
         //Kiểu long chịu đc 10^18 con số
         
